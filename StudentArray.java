@@ -78,5 +78,9 @@ public class StudentArray {
 		Arrays.sort(copyArray, Student.CompareByAge);
 		System.out.println("\nCopied students sorted by age:");
 		for(int i=0; i<5; i++) copyArray[i].Print();
+
+		Student[] students2to4 = Arrays.copyOfRange(studentArray, 2, 4);
+		System.out.println("\nSub array 2-4:");
+		for(int i=0; i<students2to4.length; i++) students2to4[i].Print();
 	}
 }
