@@ -1,1 +1,1 @@
-# learn_java
+Exercises fortifying Java skills
