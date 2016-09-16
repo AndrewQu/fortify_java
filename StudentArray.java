@@ -53,6 +53,10 @@ class Student implements print_class, Comparable <Student> {
 		}
 	};
 }
+
+class Class1 { };
+class Class2 extends Class1 {};
+
 public class StudentArray {
 	public static void main( String args[] ) {
 		Student[] studentArray = new Student[5];
@@ -82,5 +86,13 @@ public class StudentArray {
 		Student[] students2to4 = Arrays.copyOfRange(studentArray, 2, 4);
 		System.out.println("\nSub array 2-4:");
 		for(int i=0; i<students2to4.length; i++) students2to4[i].Print();
+
+		Class1 obj1 = new Class1();
+		Class2 obj2 = new Class2();
+		System.out.println("obj1 is Class1 = " + (obj1 instanceof Class1));
+		System.out.println("obj1 is Class2 = " + (obj1 instanceof Class2));
+		System.out.println("obj2 is Class1 = " + (obj2 instanceof Class1));
+		System.out.println("obj2 is Class2 = " + (obj2 instanceof Class2));
+		System.out.println("xxxxx");
 	}
 }
