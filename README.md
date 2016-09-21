@@ -6,3 +6,4 @@ StudentArray - System.copyarray(), compareTo(), Comparator<T>, Arrays.sort(), in
 Control.java - labelled break,continue, class inheritance, toString() override, calling
      super() and this()
 Cards.java - Inner class, 2d arrays
+EvalExp.jav - Lamda expressions
